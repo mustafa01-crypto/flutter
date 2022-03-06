@@ -167,7 +167,11 @@ class _SharedAppDataState extends State<SharedAppData> {
   void setValue<K extends Object, V>(K key, V value) {
     if (data[key] != value) {
       setState(() {
+<<<<<<< HEAD
         data = Map<Object, Object?>.of(data);
+=======
+        data = Map<Object, Object?>.from(data);
+>>>>>>> 1cf199384b429ad1e8720af5f7fb53a459bd625d
         data[key] = value;
       });
     }
